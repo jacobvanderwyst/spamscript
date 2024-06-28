@@ -24,6 +24,7 @@ while messagenum<messagesToSend:
     if i==100:
         i=0
         timerun+=pauseexec
+        print(f"Sleeping for {pauseexec} seconds to evade spam detection")
         time.sleep(pauseexec)
     messagenum+=1
     i+=1

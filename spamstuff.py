@@ -10,10 +10,10 @@ i=0
 messagenum=0
 timerun=0
 spamdelayletter=.00001
-messagesToSend=200
-pauseexec=26
+messagesToSend=400
+pauseexec=31
 while messagenum<messagesToSend:
-    word = f"amondrUnk"
+    word = f"amondrUnk {messagenum}"
     for letter in word:
         keyboard.tap(letter)
         time.sleep(spamdelayletter)
@@ -21,7 +21,7 @@ while messagenum<messagesToSend:
     keyboard.tap(Key.enter)
     time.sleep(.000001)
     timerun+=.0000001
-    if i==100:
+    if i==99:
         i=0
         timerun+=pauseexec
         print(f"Sleeping for {pauseexec} seconds to evade spam detection")

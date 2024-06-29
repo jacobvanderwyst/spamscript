@@ -6,7 +6,7 @@ def getWord(wordlist):
     return random.choice(wordlist)
 delay = 5  # Delay in seconds
 #outlog=open("timelog.txt", 'a')
-print("Beginning a 5 second daley. click into the field you want to enter text in")
+print("This will send 400 messages\nBeginning a 5 second daley. click into the field you want to enter text in")
 time.sleep(delay)
 
 keyboard=Controller()
@@ -16,7 +16,7 @@ timerun=0
 spamdelayletter=.00001
 messagesToSend=400
 pauseexec=31
-wordlist=["amondrOp", "amondrUnk","aomndrIq", "amondrOH", "amondrEady", "amondrUgs", "amondrIve", "amondrEst", "amondr"]
+wordlist=["amondrOp", "amondrUnk","amondrIq", "amondrOH", "amondrEady", "amondrUgs", "amondrIve", "amondrEst", "amondrIzz","amondrWut", "amondrEason","amondrInk","amondrEam","<3"]
 while messagenum<messagesToSend:
     word = getWord(wordlist)
     for letter in word:
@@ -29,7 +29,7 @@ while messagenum<messagesToSend:
     if i==99:
         i=0
         timerun+=pauseexec
-        print(f"Sleeping for {pauseexec} seconds to evade spam detection")
+        print(f"99 messages sent. Sleeping for {pauseexec} seconds to evade spam detection")
         time.sleep(pauseexec)
     messagenum+=1
     i+=1
